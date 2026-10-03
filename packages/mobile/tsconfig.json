@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@naca/shared": ["../shared/src"],
+      "@naca/shared/*": ["../shared/src/*"]
+    }
+  }
+}
