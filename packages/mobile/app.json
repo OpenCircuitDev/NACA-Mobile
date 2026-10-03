@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "NACA Community",
+    "slug": "naca-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "scheme": "naca",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1a365d"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "community.naca.mobile"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1a365d"
+      },
+      "package": "community.naca.mobile",
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#1a365d"
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow NACA to access your camera to scan QR codes on printed labels and to record audio contributions.",
+          "microphonePermission": "Allow NACA to access your microphone for recording audio contributions."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "naca-mobile"
+      }
+    }
+  }
+}
